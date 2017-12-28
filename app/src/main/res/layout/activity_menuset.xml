@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout1"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/btnhome"
+            android:layout_marginTop="10dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/hom">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnfav"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/favorite">
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btnsc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/search">
+        </ImageButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/linearLayout2"
+        android:orientation="vertical"
+        android:layout_weight="0.84"
+        android:weightSum="1">
+
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:id="@+id/tnama_m"
+            android:textColor="#ffffff">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:text="Bahan"
+            android:id="@+id/texts"
+            android:textColor="@color/colorPrimary">
+        </TextView>
+        <ScrollView
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.22">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header" android:id="@+id/tbahan"/>
+        </ScrollView>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:text="Cara Pembuatan"
+            android:textColor="@color/colorPrimary">
+        </TextView>
+        <ScrollView
+            android:layout_height="60dp"
+            android:layout_width="fill_parent"
+            android:id="@+id/ScrollView02"
+            android:layout_weight="0.50">
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header This text view should act as header"
+                android:layout_height="136dp"
+                android:id="@+id/tcara">
+            </TextView>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
